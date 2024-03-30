@@ -19,18 +19,21 @@ function divide(a, b) {
 }
 
 function operate(operator, a, b) {
+    let answer;
     switch(operator) {
         case "+": 
-            add(a, b);
+            answer = add(a, b);
             break;
         case "-":
-            subtract(a, b);
+            answer = subtract(a, b);
             break;
         case "*": 
-            multiply(a, b);
+            answer = multiply(a, b);
             break;
         case "/":
-            divide(a, b);
+            answer = divide(a, b);
             break;
     }
+    return answer;
 }
+
